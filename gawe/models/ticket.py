@@ -8,7 +8,8 @@ class Ticket(models.Model):
     _description = 'Ticket Gawe' # Some note of table
 
     # Header
-    name = fields.Char(required=True, string="Nama Gawe")
+    name = fields.Char(required=True, string="Nama")
     date = fields.Date(string="Tanggal")
     description = fields.Html(string="Deskripsi")
-    status = fields.Selection([('draft','Draft'),('to_approve','To Approve'),('approved','Approved'),('done','Done')],default='draft')
+    status = fields.Selection([('draft1','Draft'),('to_approve','To Approve'),('approved','Approved'),('done','Done')],default='draft1')
+    description2 = fields.Text(string="Deskripsi2")

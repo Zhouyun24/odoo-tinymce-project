@@ -21,7 +21,7 @@
 ##############################################################################
 
 {
-    "name" : "Semi TinyMce",
+    "name" : "WYSIWYG editor for web",
     "version" : "1.2.1",
     "category" : "Hidden",
     "description" : """This module provides a WYSIWYG editor (CKeditor).
