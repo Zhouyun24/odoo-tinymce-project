@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <menuitem
+        id="parent_ticket_id"
+        name="Gawe"
+        sequence="5"/>
+        <menuitem
+            id="child_ticket_id"
+            name="Gawe"
+            sequence="1"
+            parent='gawe.parent_ticket_id'
+            action=''
+        /> -->
+    <data>
+    
+         <menuitem id="gawe_root" name="Gawe" sequence="0"/>
+    
+    </data>
+    
+       
+
+        <record id="gawe_ticket_form_view_id2" model="ir.ui.view">
+            <field name="name">gawe_ticket_form_view_id2</field>
+            <field name="model">gawe.ticket</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="status" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                            </group>
+                            <group>
+                                <field name="date" />
+                            </group>
+                            <group>
+                                <html>
+                                    <a onclick="javascript:toggle_ckeditor();" class="wysiwyg_button wysiwyg_button_off oe_button">WYSIWYG on</a>
+                                    <field name="description" widget="text_WYSWYG"/>
+                                </html>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+</odoo>

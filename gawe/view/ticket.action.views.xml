@@ -1,0 +1,23 @@
+<odoo>
+    <data> 
+        <record id="gawe_ticket_action" model="ir.actions.act_window">
+            <field name="name">Gawe</field>
+            <field name="res_model">gawe.ticket</field>
+            <field name="view_mode">kanban,tree,form,graph</field>
+            <field name="help" type="html">
+                <p class="0_view_nocontent_smiling_face">
+                    Belum ada Gawe! (cie)
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="gawe" name="Gawe" parent="gawe_root" action="gawe_ticket_action"/>
+
+        <record id="gawe_ticket_form_view_id" model="ir.actions.act_window.view">
+            <field name="sequence" eval="2"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="gawe.gawe_ticket_form_view_id2"/>
+            <field name="act_window_id" ref="gawe.gawe_ticket_action"/>
+        </record>
+    </data>
+</odoo>
